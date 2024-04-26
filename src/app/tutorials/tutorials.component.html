@@ -1,0 +1,25 @@
+<div class="movie-list-container">
+  <h2 class="movie-list-heading">Movie List</h2>
+
+  <div class="input-group mb-3">
+    <input type="text" class="form-control search-input" placeholder="Search by title" [(ngModel)]="searchedTerm" />
+    <button class="btn btn-primary search-button" type="button" (click)="getTutorials()">Search</button>
+    <button class="btn btn-primary refresh-button" type="button" (click)="getAllTutorials()">Refresh</button>
+  </div>
+
+  <ul class="list-group">
+    <li *ngFor="let item of tutorials" class="list-group-item movie-item">
+
+        <span class="movie-details">
+
+         {{item.id}} - {{ item.title }} by {{item.director}} released in the year {{item.publishedYear}} full of {{item.genre}}
+
+        </span>
+
+    </li>
+  </ul>
+
+  <p class="delete-movie-text">Delete Movie by Id:</p>
+  <input type="number" id="id" name="id" class="form-control delete-movie-input" placeholder="Enter Movie ID" [(ngModel)]="id" required>
+  <button class="btn btn-danger delete-button" (click)="deleteTutorialById()">Delete</button>
+</div>

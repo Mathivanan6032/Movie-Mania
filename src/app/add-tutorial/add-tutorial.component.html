@@ -1,0 +1,37 @@
+<div class="container">
+  <h2>Add New Movie</h2>
+
+  <form (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+    <table>
+      <tbody>
+        <tr>
+          <td><label for="director">Movie Name:          </label></td>
+          <td><input type="text" class="form-control" id="title" name="title" [(ngModel)]="tuto.title" required></td>
+        </tr>
+
+        <tr>
+          <td><label for="director">Director:          </label></td>
+          <td><input type="text" class="form-control" id="director" name="director" [(ngModel)]="tuto.director" ></td>
+        </tr>
+
+        <tr>
+          <td><label for="genre">Genre:</label></td>
+          <td><input type="text" class="form-control" id="genre" name="genre" [(ngModel)]="tuto.genre" required></td>
+        </tr>
+
+        <tr>
+          <td><label for="publishedYear">Released Year:       </label></td>
+          <td><input type="number" class="form-control" id="publishedYear" name="publishedYear" [(ngModel)]="tuto.publishedYear"></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div *ngIf ="tuto.title!='' && tuto.director != '' && tuto.publishedYear != 0 && tuto.genre != '' ">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+  </form>
+</div>

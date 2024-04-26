@@ -1,0 +1,29 @@
+
+marquee{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: red;
+  font-weight: 400;
+
+}
+
+
+.footer {
+  background-color: #333;
+  /* Set the background color */
+  color: #fff;
+  /* Set the text color */
+  padding: 20px 0;
+  /* Add padding to the top and bottom */
+  text-align: center;
+  /* Center-align the text */
+}
+
+.footer p {
+  margin: 0;
+  /* Remove default margin for paragraphs */
+}
+
+.footer p:last-child {
+  margin-top: 10px;
+  /* Add some space between the paragraphs */
+}

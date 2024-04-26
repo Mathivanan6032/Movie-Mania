@@ -1,0 +1,55 @@
+.movie-list-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.movie-list-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.search-input {
+  width: 70%;
+}
+
+.search-button,
+.refresh-button {
+  margin-left: 10px;
+}
+
+.list-group {
+  margin-top: 20px;
+}
+
+.movie-item {
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.movie-details {
+  font-size: 16px;
+  color: #333;
+}
+
+.delete-movie-text {
+  margin-top: 20px;
+  color: #333;
+}
+
+.delete-movie-input {
+  width: 30%;
+}
+
+.delete-button {
+  margin-top: 10px;
+}

@@ -5,6 +5,19 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent {
-  title = 'learning_ng_coding';
-}
+export class AppComponent{
+  title = 'Welcome to the Movie Mania!';
+
+  }
+
+
+  /*data: any;
+
+  constructor(private backendService: BackendService) { }
+
+  ngOnInit(): void {
+    this.backendService.getData().subscribe(response => {
+      this.data = response;
+    });*/
+
+
